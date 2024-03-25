@@ -1,0 +1,38 @@
+@import "../../styles/global/variables.scss";
+@import "../../styles/global/mixins.scss";
+
+.headerTop {
+  display: flex;
+  gap: 2.4rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.logo {
+  display: block;
+}
+
+.menuButton {
+  padding: 1.2rem 2.4rem;
+  background-color: $blue;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    @include media-hover {
+      background-color: $blue-light;
+      box-shadow: 0px 12px 16px -7px rgba(21, 81, 229, 0.44);
+    }
+  }
+}
+
+.menuIcon {
+  background-image: url(../../assets/menu_icon.png);
+  display: inline-block;
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 1.2rem;
+}
+
+/* .menuButtonText {
+  font-family: "MyFont";
+} */
