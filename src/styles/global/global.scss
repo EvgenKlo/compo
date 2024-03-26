@@ -1,11 +1,22 @@
 * {
-  font-family: "Gotham", "Inter", sans-serif;
-  color: $dark;
   box-sizing: border-box;
 
   &:focus {
     outline: none;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  font-family: "Gotham", "Inter", sans-serif;
+  color: $dark;
 }
 
 html {
@@ -18,9 +29,35 @@ html {
   padding: 2.4rem 3.2rem;
 }
 
+.h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
 .h2 {
   font-weight: 500;
   font-size: 32px;
+}
+
+.h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .lightText {
@@ -33,4 +70,12 @@ html {
 
 .blueText {
   color: $blue;
+}
+
+.verticalDivider {
+  border-left: 1px solid $grey;
+}
+
+.horizontalDivider {
+  border-top: 1px solid $grey;
 }

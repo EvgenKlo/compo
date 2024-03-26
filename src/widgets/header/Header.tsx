@@ -25,7 +25,7 @@ const Header = () => {
         </a>
         <button className={styles.menuButton}>
           <span className={styles.menuIcon}></span>
-          <span className={`${styles.menuButtonText} lightText`}>Меню</span>
+          <p className={`${styles.menuButtonText} lightText`}>Меню</p>
         </button>
         <div className={styles.inputContainer}>
           <input
@@ -47,7 +47,7 @@ const Header = () => {
         <div className={styles.like}></div>
         <button className={styles.cart}>
           <span className={styles.cartIcon}></span>
-          <span className={`${styles.cartPrice} blueText`}>144 235₽</span>
+          <p className={`${styles.cartPrice} blueText`}>144 235₽</p>
         </button>
         <div className={styles.user}>
           <img
@@ -73,9 +73,9 @@ const Header = () => {
         <div className={styles.other}>
           <button className={styles.managerButton}>
             <span className={styles.messageIcon}></span>
-            <span className={`${styles.managerButtonText} blueText`}>
+            <p className={`${styles.managerButtonText} blueText`}>
               Ваш менеджер
-            </span>
+            </p>
           </button>
           <a href="##" className={styles.sales}>
             <span className={styles.salesIcon}></span>
