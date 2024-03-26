@@ -3,7 +3,10 @@ import Header from "../widgets/header/Header";
 const App = () => {
   return (
     <>
-      <Header></Header>
+      <header>
+        <Header />
+      </header>
+      <main></main>
     </>
   );
 };

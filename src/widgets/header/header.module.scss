@@ -7,11 +7,17 @@
   padding: 1.6rem 2.4rem;
 }
 
+.logoLink {
+  height: fit-content;
+  margin: auto;
+}
+
 .logo {
-  display: block;
+  display: inline-block;
 }
 
 .menuButton {
+  display: flex;
   padding: 1.2rem 2.4rem;
   background-color: $blue;
   border-radius: 8px;
@@ -33,6 +39,234 @@
   margin-right: 1.2rem;
 }
 
-/* .menuButtonText {
-  font-family: "MyFont";
-} */
+.menuButtonText {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  margin: auto;
+}
+
+.headerBottom {
+  display: flex;
+  padding: 1.2rem 2.4rem;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.inputButtonsContainer {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  gap: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inputButton {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.inputButtonCancel {
+  background-image: url(../../assets/cancel_Icon.svg);
+  cursor: pointer;
+}
+
+.inputButtonSearch {
+  background-image: url(../../assets/search_Icon.svg);
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.8rem 8.4rem 0.8rem 1.6rem;
+  border: 1px solid $grey;
+  color: $dark;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.1s;
+  &:focus {
+    border: 2px solid $blue !important;
+    box-shadow: 0px 0px 6px 0px rgba(186, 196, 224, 1);
+  }
+  @include media-hover {
+    &:hover {
+      border: 1px solid $grey-dark;
+    }
+  }
+}
+
+.linkList {
+  display: flex;
+  list-style-type: none;
+  gap: 2.4rem;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  margin: auto 0;
+}
+
+.link {
+  color: $dark;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bell {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin: auto 0;
+  background-image: url(../../assets/bell_Icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.divider {
+  border-left: 1px solid $grey;
+}
+
+.like {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin: auto 0;
+  background-image: url(../../assets/like_Icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.cart {
+  background-color: $blue-transparent;
+  border-radius: 8px;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/cart_Icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cartPrice {
+  white-space: nowrap;
+  display: flex;
+  margin: auto;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.user {
+  display: flex;
+  gap: 16px;
+}
+
+.avatar {
+  display: block;
+  flex-shrink: 0;
+  height: fit-content;
+  margin: auto;
+}
+
+.name {
+  display: flex;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 14px;
+  height: fit-content;
+  margin: auto;
+}
+
+.userButton {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/down_Icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  cursor: pointer;
+}
+
+.other {
+  display: flex;
+  gap: 24px;
+}
+
+.managerButton {
+  display: flex;
+  background-color: $blue-transparent;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.messageIcon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../assets/message_Icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.managerButtonText {
+  height: fit-content;
+  margin: auto;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sales {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.salesIcon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../assets/sales_Icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.salesText {
+  font-weight: 500;
+  font-size: 14px;
+  margin: auto;
+}
+
+.blog {
+  font-weight: 500;
+  font-size: 14px;
+  height: fit-content;
+  margin: auto;
+  cursor: pointer;
+}

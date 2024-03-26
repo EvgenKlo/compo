@@ -1,4 +1,6 @@
 * {
+  font-family: "Gotham", "Inter", sans-serif;
+  color: $dark;
   box-sizing: border-box;
 
   &:focus {
@@ -8,4 +10,16 @@
 
 html {
   font-size: 62.5%;
+}
+
+.lightText {
+  color: $light;
+}
+
+.darkText {
+  color: $dark;
+}
+
+.blueText {
+  color: $blue;
 }
