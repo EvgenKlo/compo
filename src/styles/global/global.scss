@@ -12,6 +12,17 @@ html {
   font-size: 62.5%;
 }
 
+.container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 2.4rem 3.2rem;
+}
+
+.h2 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
 .lightText {
   color: $light;
 }

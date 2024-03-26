@@ -1,3 +1,4 @@
+import ProductCard from "../entities/productCard/ProductCard";
 import Header from "../widgets/header/Header";
 
 const App = () => {
@@ -6,7 +7,9 @@ const App = () => {
       <header>
         <Header />
       </header>
-      <main></main>
+      <main className="container">
+        <ProductCard />
+      </main>
     </>
   );
 };
