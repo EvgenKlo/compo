@@ -125,7 +125,11 @@ const ProductCard = () => {
               </div>
             </div>
             <div className={`verticalDivider`}></div>
-            <div className={styles.characteristicsContainer}></div>
+            <div className={styles.characteristicsContainer}>
+              <h4 className={`${styles.characteristicsTitle} h4`}>
+                Характеристики
+              </h4>
+            </div>
           </div>
           <div className={styles.description}>
             <h3 className={`${styles.descriptionTitle} h3`}>Описание товара</h3>

@@ -127,6 +127,7 @@
   display: flex;
   gap: 12px;
   justify-content: center;
+  border: 2px solid transparent;
   @include media-hover {
     &:hover {
       background-color: $blue-light;
@@ -203,6 +204,11 @@
 
 .characteristicsContainer {
   width: 100%;
+  padding: 0.8rem 0;
+}
+
+.characteristicsTitle {
+  margin-bottom: 3.2rem;
 }
 
 .descriptionTitle {
