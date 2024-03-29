@@ -1,0 +1,157 @@
+@import "../../styles/global/variables.scss";
+@import "../../styles/global/mixins.scss";
+
+.footer {
+  max-width: 1600px;
+  margin: auto;
+  padding: 4.8rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerTopLeft {
+  display: flex;
+}
+
+.footerLogoLink {
+  height: fit-content;
+  margin: auto 0;
+}
+
+.logo {
+  display: inline-block;
+  width: 206px;
+  margin-right: 5.6rem;
+}
+
+.phoneContainer {
+  margin: auto 4.8rem auto 0;
+  height: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mailContainer {
+  margin: auto 0;
+  height: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerTopLeftText {
+  font-weight: 400;
+  font-size: 12px;
+  color: $grey-footer;
+}
+
+.footerTopRight {
+  padding: 0.5rem 0;
+}
+
+.footerTopRightList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.footerTopRightItem {
+  height: fit-content;
+  margin: auto 0;
+}
+
+.footerTopRightLastItem {
+  display: inline-block;
+  padding: 1.6rem 2.4rem;
+  background-color: $blue-transparent;
+  border-radius: 8px;
+  color: $blue;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.catalogLinksContainer {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footerCatalogItem {
+  width: 100%;
+}
+
+.footerCatalogTitle {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 2.4rem;
+}
+
+.catalogItemList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerCatalogLink {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.linksList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+}
+
+.link {
+  color: $grey-dark;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.politics {
+  font-weight: 400;
+  font-size: 12px;
+  color: $grey-dark;
+  text-align: center;
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.companyLogo {
+  display: block;
+  width: 124px;
+}
+
+.companyName {
+  color: rgba(143, 155, 179, 1);
+  height: fit-content;
+  margin: auto 0;
+}

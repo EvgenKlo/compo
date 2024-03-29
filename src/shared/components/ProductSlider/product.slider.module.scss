@@ -1,0 +1,45 @@
+@import "../../../styles/global/variables.scss";
+@import "../../../styles/global/mixins.scss";
+
+.grandPhoto {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.sliderPanel {
+  display: flex;
+  gap: 16px;
+}
+
+.miniPhotoList {
+  display: flex;
+  gap: 12px;
+}
+
+.miniPhoto {
+  display: block;
+  width: 100%;
+}
+
+.sliderBtn {
+  width: 38px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: $blue-transparent;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../../assets/arrow_Icon.svg);
+  }
+}
+
+.nextBtn {
+  transform: rotate(180deg);
+}

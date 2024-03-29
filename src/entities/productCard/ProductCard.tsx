@@ -2,6 +2,17 @@ import { Breadcrumbs, Link } from "@mui/material";
 import styles from "./productCard.module.scss";
 import { IOSSwitch } from "../../shared/components/Switcher/Switcher";
 import { useState } from "react";
+import ProductSlider from "../../shared/components/ProductSlider/ProductSlider";
+
+const characteristics = [
+  { id: 1, title: "Код поставщика", data: "ELC00696" },
+  { id: 2, title: "Артикул", data: "ELC0200000696" },
+  { id: 3, title: "Код РАЭК", data: "ELC00696" },
+  { id: 4, title: "Код ЕТМ", data: "ELC00696" },
+  { id: 5, title: "Бренд", data: "Electric used" },
+  { id: 6, title: "Серия", data: "ELC00696" },
+  { id: 7, title: "Код производителя ", data: "ELC0200000696" },
+];
 
 const ProductCard = () => {
   const [countProductInCart, setCountProductInCart] = useState(0);
@@ -47,7 +58,9 @@ const ProductCard = () => {
         Кроссовки мужские Skechers Sunny Dale
       </h2>
       <div className={styles.card}>
-        <div className={styles.photoSlider}></div>
+        <div className={styles.photoSlider}>
+          <ProductSlider />
+        </div>
         <div className={styles.descriptionContainer}>
           <div className={styles.aboutProduct}>
             <div className={styles.details}>
@@ -129,6 +142,18 @@ const ProductCard = () => {
               <h4 className={`${styles.characteristicsTitle} h4`}>
                 Характеристики
               </h4>
+              <ul className={styles.characteristicsList}>
+                {characteristics.map((item) => (
+                  <li key={item.id} className={styles.characteristicsItem}>
+                    <p className={`${styles.characteristicsItemData} h6`}>
+                      {item.data}
+                    </p>
+                    <h5 className={styles.characteristicsItemTitle}>
+                      {item.title}
+                    </h5>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           <div className={styles.description}>
